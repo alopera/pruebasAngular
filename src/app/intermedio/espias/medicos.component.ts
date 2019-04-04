@@ -15,7 +15,7 @@ export class MedicosComponent implements OnInit {
   public medicos: any[] = [];
   public mensajeError: string;
 
-  constructor( public _medicoService: MedicosService ) { }
+  constructor( public _medicoService: MedicosService ) {}
 
   ngOnInit() {
     this._medicoService.getMedicos()
